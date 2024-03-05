@@ -1,0 +1,4 @@
+dataset: CUB200
+dataroot: data
+tasks: 10
+split_size: 20

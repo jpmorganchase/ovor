@@ -1,0 +1,34 @@
+logging:
+  metrics:
+    train_loss: "{avg:.4f}"
+    train_acc: "{avg:.4f}"
+    forgetting: "{avg:.4f}"
+    id_score: "{avg:.4f}"
+    ood_score: "{avg:.4f}"
+    avg_acc: "{last:.4f}"
+    train_time: "{avg:.2f}"
+    eval_time: "{avg:.2f}"
+    memory: "{max:.0f}"
+    forgetting_til: "{avg:.4f}"
+  counters:
+  - step
+  - task
+ood:
+  type: NPOS
+  lmda: 0.1
+  cov: 0.1
+  thres_id: -15.0
+  thres_ood: -3.0
+workers: 4
+epochs:
+- 0
+- 50
+- 0
+scheduler: cosine
+batch_size: 128
+lr: 0.001
+optimizer: Adam
+momentum: 0.9
+weight_decay: 0
+model_type: zoo
+model_name: vit_pt_imnet
