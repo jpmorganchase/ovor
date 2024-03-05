@@ -1,0 +1,4 @@
+dataset: ImageNet_R
+dataroot: data
+tasks: 20
+split_size: 10

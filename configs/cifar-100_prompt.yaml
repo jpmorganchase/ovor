@@ -1,0 +1,4 @@
+dataset: CIFAR100
+dataroot: data
+tasks: 10
+split_size: 10
