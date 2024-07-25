@@ -6,6 +6,6 @@ pillow==10.3.0
 opencv-python==4.9.0.80
 tqdm
 faiss-gpu==1.7.2
-torch==2.1.2
+torch==2.2.0
 torchvision==0.16.2
 six
